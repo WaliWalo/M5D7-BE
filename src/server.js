@@ -18,7 +18,7 @@ server.use(express.json());
 
 const whiteList =
   process.env.NODE_ENV === "production"
-    ? [process.env.FE_URL_PROD]
+    ? [process.env.FE_URL_PROD, process.env.FE_URL_DEV]
     : [process.env.FE_URL_DEV];
 
 const corsOptions = {
